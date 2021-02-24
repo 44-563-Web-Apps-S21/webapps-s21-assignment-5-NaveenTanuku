@@ -22,7 +22,13 @@
     .Thumbails:hover {
         box-shadow: 0 0 1px 1px red;
     }
-</style>
+    thead{
+        color: maroon;
+    }
+    .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color:lightcyan;
+}
+   </style>
 </head>
 <body>
     <h1>Plants by Naveen</h1>
@@ -55,5 +61,56 @@
         <img src="aloe.jpg" alt="Aloe" class="Thumbails" width="150" height="150">
         <img src="vestia.jpg" alt="Vestia" class="Thumbails" width="150" height="150">
     </div>
+    <table class="table table-bordered table-striped table-hover table-condensed">
+    <caption style="caption-side: top;">Name Defines</caption>
+        <thead>
+            <tr>
+                <th scope="col">Letter</th>
+                <th scope="col">Plant</th>
+                <th scope="col">City</th>
+                <th scope="col">Food</th>    
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">N</th>
+                <td>Neillovka</td>
+                <td>New Haven</td>
+                <td>Nachos</td>
+            </tr>
+            <tr>
+                <th scope="row">A</td>
+                <td>Aloe</td>
+                <td>Austin</td>
+                <td>AlmondPie</td>  
+            </tr>
+            <tr>
+                <th scope="row">V</th>
+                <td>Vestia</td>
+                <td>Viginia</td>
+                <td>Vension Chilli</td>  
+            </tr>
+            <tr>
+                <th scope="row">E</th>
+                <td>Ensete</td>
+                <td>Evansville</td>
+                <td>Egg Salad</td>  
+            </tr>
+            <tr>
+                <th scope="row">E</th>
+                <td>Etlingera</td>
+                <td>Elizabeth</td>
+                <td>Eggplant fry</td>  
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">N</th>
+                <td>Nicandra</td>
+                <td>Nuggets</td>
+                <td>New York</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
