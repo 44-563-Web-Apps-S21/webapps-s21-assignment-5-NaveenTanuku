@@ -8,6 +8,21 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    .responsive, .Thumbails  {
+        width: 30%;
+        height: auto;
+    }
+    .Thumbails{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 100px;
+    }
+    .Thumbails:hover {
+        box-shadow: 0 0 1px 1px red;
+    }
+</style>
 </head>
 <body>
     <h1>Plants by Naveen</h1>
@@ -29,6 +44,16 @@
             <div class ="col-md">Nicandra</div>
         </div>
         <p>The row with the Plant names break first because the limit of width of md is 768px and if we reduce the size below the 768px the row with the plant names starts stacking up the elements vertically</p>
+    </div>
+    <div class="Images">
+        <img src="Neillovka.jpg" alt="Neillovka" class="responsive" width=450 height=450>
+        <img src="aloe.jpg" alt="Aloe" class="responsive" width=450 height=450>
+        <img src="vestia.jpg" alt="Vestia" class="responsive" width=450 height=450>
+    </div>
+    <div class="Images">
+        <img src="Neillovka.jpg" alt="Neillovka" class="Thumbails" width="150" height="150">
+        <img src="aloe.jpg" alt="Aloe" class="Thumbails" width="150" height="150">
+        <img src="vestia.jpg" alt="Vestia" class="Thumbails" width="150" height="150">
     </div>
 </body>
 </html>
