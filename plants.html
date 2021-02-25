@@ -9,11 +9,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <style>
-    .responsive, .Thumbails  {
+    .img-responsive, .img-thumbails  {
         width: 30%;
         height: auto;
     }
-    .Thumbails{
+    .img-thumbails{
         border: 1px solid #ddd;
         border-radius: 4px;
         padding: 5px;
@@ -28,7 +28,22 @@
    </style>
 </head>
 <body>
-    <h1>Plants by Naveen</h1>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="plants.html">Happy Plants</a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse show" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="cat.html">Cat</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="dog.html">Dog</a>
+                </li>
+        </div>
+    </nav>
+<h1>Plants by Naveen</h1>
     <div class="container">
         <div class="row">
             <div class ="col-sm-2">N</div>
@@ -49,14 +64,14 @@
         <p>The row with the Plant names break first because the limit of width of md is 768px and if we reduce the size below the 768px the row with the plant names starts stacking up the elements vertically</p>
     </div>
     <div class="Images">
-        <img src="Neillovka.jpg" alt="Neillovka" class="responsive" width=450 height=450>
-        <img src="aloe.jpg" alt="Aloe" class="responsive" width=450 height=450>
-        <img src="vestia.jpg" alt="Vestia" class="responsive" width=450 height=450>
+        <img src="Neillovka.jpg" alt="Neillovka" class="img-responsive" width=450 height=450>
+        <img src="aloe.jpg" alt="Aloe" class="img-responsive" width=450 height=450>
+        <img src="vestia.jpg" alt="Vestia" class="img-responsive" width=450 height=450>
     </div>
     <div class="Images">
-        <img src="Neillovka.jpg" alt="Neillovka" class="Thumbails" width="150" height="150">
-        <img src="aloe.jpg" alt="Aloe" class="Thumbails" width="150" height="150">
-        <img src="vestia.jpg" alt="Vestia" class="Thumbails" width="150" height="150">
+        <img src="Neillovka.jpg" alt="Neillovka" class="img-thumbails" width="150" height="150">
+        <img src="aloe.jpg" alt="Aloe" class="img-humbails" width="150" height="150">
+        <img src="vestia.jpg" alt="Vestia" class="img-thumbails" width="150" height="150">
     </div>
     <table class="table table-bordered table-striped table-hover table-condensed">
     <caption style="caption-side: top;">Name Defines</caption>
